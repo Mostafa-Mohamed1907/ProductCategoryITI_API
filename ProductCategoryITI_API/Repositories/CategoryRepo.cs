@@ -22,18 +22,18 @@ namespace ProductCategoryITI_API.Repositories
             Category category = context.Category.FirstOrDefault(c => c.Id == id);
             return category;
         }
-        public void AddProd(Category category)
+        public void AddCategory(Category category)
         {
             context.Add(category);
         }
 
-        public void UpdateProd( Category category)
+        public void UpdateCategory( Category category)
         {
             //category = GetById(id);
             context.Update(category);
         }
 
-        public void DeleteProd(Category category)
+        public void DeleteCategory(Category category)
         {
             context.Remove(category);
         }

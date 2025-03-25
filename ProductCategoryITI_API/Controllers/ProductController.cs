@@ -43,7 +43,7 @@ namespace ProductCategoryITI_API.Controllers
             productRepo.Save();
             return Created();
         }
-        [HttpPut("{id}")]
+        [HttpPut]
         public IActionResult UpdateProduct(int id, Product newProduct)
         {
             Product DbProduct = productRepo.GetById(id);

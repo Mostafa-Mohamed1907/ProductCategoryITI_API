@@ -6,9 +6,9 @@ namespace ProductCategoryITI_API.Repositories
     {
         public List<Category> GetAll();
         public Category GetById(int id);
-        public void AddProd(Category category);
-        public void UpdateProd(Category category);
-        public void DeleteProd(Category category);
+        public void AddCategory(Category category);
+        public void UpdateCategory(Category category);
+        public void DeleteCategory(Category category);
         public void Save();
     }
 }
